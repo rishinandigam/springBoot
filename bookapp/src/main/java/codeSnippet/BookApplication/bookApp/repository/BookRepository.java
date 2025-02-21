@@ -1,4 +1,9 @@
-package codeSnippet.BookApplication.bookApp.repository;
+package codeSnippet.bookApplication.bookApp.repository;
 
-public class BookRepository {
+import codeSnippet.bookApplication.bookApp.entity.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface Bookrepository extends JpaRepository<Book, Integer> {
+
+
 }
